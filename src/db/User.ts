@@ -1,0 +1,12 @@
+import mongoose from 'mongoose'
+
+const userSchema = new mongoose.Schema({
+    id: { type: String, unique: true, index: true },
+    username: { type: String, unique: true },
+    email: { type: String, unique: true },
+    password: String,
+}, { timestamps: true })
+
+const UserModel = mongoose.model('User', userSchema)
+
+export default UserModel
