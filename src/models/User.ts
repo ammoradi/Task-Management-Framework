@@ -14,6 +14,10 @@ class User {
     this.email = email
   }
 
+  public getId(): Number {
+    return this.id
+  }
+
   public getUserName(): String {
     return this.username
   }
