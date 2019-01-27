@@ -11,6 +11,10 @@ class Attachment {
         this.url = url
     }
 
+    public getId(): Number {
+        return this.id
+    }
+
     public getType(): AttachmentType {
         return this.type
     }

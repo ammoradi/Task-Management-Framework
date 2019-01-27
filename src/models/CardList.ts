@@ -11,6 +11,10 @@ class CardList {
         this.name = name
     }
 
+    public getId(): Number {
+        return this.id
+    }
+
     public getName(): String {
         return this.name
     }

@@ -16,6 +16,10 @@ class Membership {
         this.role = role
     }
 
+    public getId(): Number {
+        return this.id
+    }
+
     public getUser(): User {
         return this.user
     }

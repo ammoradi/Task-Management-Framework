@@ -9,7 +9,15 @@ class Comment {
         this.body = body
     }
 
-    public getMembershipId(): Number {
+    public getId(): Number {
+        return this.id
+    }
+
+    public getUserId(): Number {
+        return this.userId
+    }
+
+    public getBoardId(): Number {
         return this.boardId
     }
 

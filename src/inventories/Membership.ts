@@ -10,6 +10,13 @@ class MembershipInventory {
     public addMembership(Membership: Membership): void {
         this.membershipList.push(Membership)
     }
+
+    public deleteMembership(membershipId: Number): void {
+        const membershipIndex = this.membershipList.findIndex(
+            (membership: Membership) => membership.getId() === membershipId
+        )
+        this.membershipList.splice(membershipIndex, 1)
+    }
 }
 
 export default MembershipInventory
