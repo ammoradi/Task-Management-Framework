@@ -1,12 +1,10 @@
 import UserDbModel from './../db/User'
-import Membership from './Membership'
 
 class User {
   private id: Number
   private username: String
   private password: String
   private email: String
-  private userMemberships: Membership[]
   constructor(username: String, password: String, email: String) {
     this.id = 0
     this.username = username

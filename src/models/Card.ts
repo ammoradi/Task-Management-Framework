@@ -17,6 +17,10 @@ class Card {
         this.dueDate = dueDate
     }
 
+    public getId(): Number {
+        return this.id
+    }
+
     public getName(): String {
         return this.name
     }
@@ -47,6 +51,14 @@ class Card {
     }
     public addAttachment(attachment: Attachment): void {
         this.attachments.push(attachment)
+    }
+
+    public getDueDate(): String {
+        return this.dueDate
+    }
+
+    public setDueDate(dueDate: String): void {
+        this.dueDate = dueDate
     }
 }
 
